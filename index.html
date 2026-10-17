@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Car Image Gallery</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>
+        WELCOME TO MY
+        <span>CAR GALLERY</span>
+    </h1>
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+
+        <div class="gallery-item">
+            <img src="images1.jpg" alt="Volkswagen Virtus">
+            <div class="caption">VW-VIRTUS</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images2.jpg" alt="Ford Endeavour">
+            <div class="caption">FORD-ENDEAVOUR</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images3.jpg" alt="BMW M5">
+            <div class="caption">BMW-M5</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images4.jpg" alt="Skoda Slavia">
+            <div class="caption">SKODA-SLAVIA</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images5.jpg" alt="Mercedes A-Class">
+            <div class="caption">MERCEDES-A-CLASS</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images6.jpg" alt="Mini Cooper 3 Door">
+            <div class="caption">MINI COOPER 3DOOR</div>
+        </div>
+
+    </div>
+
+    <!-- Lightbox Image Viewer -->
+    <div class="lightbox"
+         id="lightbox"
+         role="dialog"
+         aria-modal="true"
+         aria-label="Car image viewer">
+
+        <div class="counter" id="counter"></div>
+
+        <button class="close-btn"
+                id="closeBtn"
+                aria-label="Close image viewer">&times;</button>
+
+        <button class="nav-btn prev"
+                id="prevBtn"
+                aria-label="Previous image">&#10094;</button>
+
+        <img id="lightboxImg" src="" alt="">
+
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+
+        <button class="nav-btn next"
+                id="nextBtn"
+                aria-label="Next image">&#10095;</button>
+
+    </div>
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
